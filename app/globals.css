@@ -1,26 +1,471 @@
+/* Import Google Fonts FIRST (must precede all other rules) */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 @import "tailwindcss";
 
+/* Abril Fatface Font - from local directory */
+@font-face {
+  font-family: 'Abril Fatface';
+  src: url('/fonts/AbrilFatface-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Gopher Font - kept as fallback */
+@font-face {
+  font-family: 'Gopher';
+  src: local('Gopher Medium'),
+    local('Gopher-Medium'),
+    local('Gopher'),
+    url('/fonts/Gopher-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Sora Font - Variable Weight from local directory */
+@font-face {
+  font-family: 'Sora';
+  src: url('/fonts/Sora/Sora-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Canicule Display Font - Complete Weight Range from Behance */
+/* Thin (100) - Decorative, large display */
+@font-face {
+  font-family: 'Canicule Display';
+  src: url('/fonts/behance-6819c43d5c75a/CaniculeDisplayv0.4Trials/ttfs/CaniculeDisplayv0.4-Thin.Trial.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ExtraLight (200) - Subtle accents */
+@font-face {
+  font-family: 'Canicule Display';
+  src: url('/fonts/behance-6819c43d5c75a/CaniculeDisplayv0.4Trials/ttfs/CaniculeDisplayv0.4-ExtraLight.Trial.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light (300) - Body text light */
+@font-face {
+  font-family: 'Canicule Display';
+  src: url('/fonts/behance-6819c43d5c75a/CaniculeDisplayv0.4Trials/ttfs/CaniculeDisplayv0.4-Light.Trial.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular (400) - Body text */
+@font-face {
+  font-family: 'Canicule Display';
+  src: url('/fonts/behance-6819c43d5c75a/CaniculeDisplayv0.4Trials/ttfs/CaniculeDisplayv0.4-Regular.Trial.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular Italic */
+@font-face {
+  font-family: 'Canicule Display';
+  src: url('/fonts/behance-6819c43d5c75a/CaniculeDisplayv0.4Trials/ttfs/CaniculeDisplayv0.4-Italic.Trial.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Medium (500) - Emphasis */
+@font-face {
+  font-family: 'Canicule Display';
+  src: url('/fonts/behance-6819c43d5c75a/CaniculeDisplayv0.4Trials/ttfs/CaniculeDisplayv0.4-Medium.Trial.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SemiBold (600) - Headings */
+@font-face {
+  font-family: 'Canicule Display';
+  src: url('/fonts/behance-6819c43d5c75a/CaniculeDisplayv0.4Trials/ttfs/CaniculeDisplayv0.4-SemiBold.Trial.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold (700) - Section headings */
+@font-face {
+  font-family: 'Canicule Display';
+  src: url('/fonts/behance-6819c43d5c75a/CaniculeDisplayv0.4Trials/ttfs/CaniculeDisplayv0.4-Bold.Trial.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ExtraBold (800) - Hero headings */
+@font-face {
+  font-family: 'Canicule Display';
+  src: url('/fonts/behance-6819c43d5c75a/CaniculeDisplayv0.4Trials/ttfs/CaniculeDisplayv0.4-ExtraBold.Trial.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Black (900) - Display/impact */
+@font-face {
+  font-family: 'Canicule Display';
+  src: url('/fonts/behance-6819c43d5c75a/CaniculeDisplayv0.4Trials/ttfs/CaniculeDisplayv0.4-Black.Trial.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* REFINED COLOR PALETTE - Therapy-Focused Design */
+  /* Optimized for trust, calm, and readability */
+
+  /* Primary - Authority, trust, professionalism */
+  --primary: #2C3E50;
+  /* Deep Slate Blue */
+
+  /* Secondary - Soft, calming backgrounds */
+  --secondary: #EDE8E0;
+  /* Warm Sand */
+
+  /* Accent - Regulation, healing, balance */
+  --accent: #7D8B7A;
+  /* Muted Sage */
+
+  /* Text Colors */
+  --text-primary: #1F2A33;
+  /* Charcoal Slate - high contrast */
+  --text-secondary: #6B7280;
+  /* Soft Gray - subtext, captions */
+
+  /* Background Colors */
+  --bg-base: #FAF8F5;
+  /* Warm White - inviting, non-clinical */
+  --bg-light: #FAF8F5;
+  /* Same as base for consistency */
+  --bg-medium: #EDE8E0;
+  /* Warm Sand */
+  --bg-dark: #7D8B7A;
+  /* Muted Sage */
+
+  /* UI Elements */
+  --divider: #D4CEC4;
+  /* Light Taupe - subtle structure */
+  --border: #D4CEC4;
+  /* Same as divider */
+
+  /* Legacy variable mappings for compatibility */
+  --background: var(--bg-base);
+  --foreground: var(--text-primary);
+  --dark-green: var(--primary);
+  --light-cream: var(--bg-base);
+  --primary-dark: var(--primary);
+  --primary-text: var(--text-primary);
+
+  /* Base Font Size */
+  --base-font-size: 16px;
+
+  /* TYPOGRAPHY SYSTEM */
+  /* Display Font - for headings and prominent text */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  /* Body Font - for readable content */
+  --font-body: 'Gopher', 'Cormorant Garamond', Georgia, serif;
+  /* Legacy compatibility */
+  --font-primary: 'Cormorant Garamond', Georgia, serif;
+  --font-gopher: 'Gopher', 'Cormorant Garamond', Georgia, serif;
+
+  /* Heading Font Settings - SemiBold (600) */
+  --heading-font-font-family: var(--font-display);
+  --heading-font-font-style: normal;
+  --heading-font-font-weight: 600;
+  --heading-font-text-transform: none;
+  --heading-font-letter-spacing: -0.01em;
+  --heading-font-line-height: 1.2em;
+
+  /* Body Font Settings - Regular (400) */
+  --body-font-font-family: var(--font-body);
+  --body-font-font-style: normal;
+  --body-font-font-weight: 400;
+  --body-font-text-transform: none;
+  --body-font-letter-spacing: 0em;
+  --body-font-line-height: 1.7em;
+
+  /* Heading Sizes */
+  --heading-1-size-value: 4.5;
+  --heading-2-size-value: 3;
+  --heading-3-size-value: 2.5;
+  --heading-4-size-value: 2;
+  --normal-text-size-value: 1.2;
+
+  /* Gopher Font Settings - Now using Cormorant */
+  --gopher-font-size: 34.432px;
+  --gopher-font-weight: 500;
+  --gopher-font-style: normal;
+  --gopher-font-variant: normal;
+  --gopher-font-kerning: auto;
+  --gopher-font-optical-sizing: auto;
+  --gopher-font-stretch: 100%;
+  --gopher-font-variation-settings: normal;
+  --gopher-font-feature-settings: normal;
+  --gopher-text-transform: none;
+  --gopher-text-decoration: none;
+  --gopher-text-align: start;
+  --gopher-text-indent: 0px;
+
+  /* Image Overlay Variables */
+  --image-component-overlay-blend-mode: normal;
+  --image-component-overlay-opacity: 0;
+  --image-block-overlay-color: transparent;
+
+  /* Color Palette HSL Values */
+  --white-hsl: 40, 33%, 97%;
+  --black-hsl: 207, 30%, 24%;
+  --safeLightAccent-hsl: 180, 25%, 49%;
+  --safeDarkAccent-hsl: 207, 30%, 24%;
+  --safeInverseAccent-hsl: 0, 0%, 0%;
+  --safeInverseLightAccent-hsl: 0, 0%, 0%;
+  --safeInverseDarkAccent-hsl: 0, 0%, 100%;
+  --accent-hsl: 180, 25%, 49%;
+  --lightAccent-hsl: 34, 31%, 64%;
+  --darkAccent-hsl: 100, 8%, 51%;
+
+  /* Derived Colors */
+  --siteBackgroundColor: var(--bg-light);
+  --paragraphMediumColor: var(--primary-text);
+  --siteTitleColor: var(--primary-dark);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Responsive Base Font Size */
+html {
+  font-size: var(--base-font-size);
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: min(var(--base-font-size), 16px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@theme inline {
+  --color-background: var(--bg-base);
+  --color-foreground: var(--text-primary);
+  --color-dark-green: var(--primary);
+  --color-light-cream: var(--bg-base);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-primary);
+}
+
+/* User provided CSS for Image Overlay */
+[data-definition-name="website.components.imageFluid"] .fluidImageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: var(--image-component-overlay-blend-mode);
+  opacity: var(--image-component-overlay-opacity);
+}
+
+.fluidImageOverlay {
+  background-color: var(--image-block-overlay-color);
+}
+
+body {
+  background: var(--bg-light);
+  color: var(--primary-text);
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* Custom scrollbar to match new theme */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--divider);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Cormorant Text Style */
+.gopher-text {
+  font-family: var(--font-primary) !important;
+  font-size: var(--gopher-font-size);
+  font-weight: var(--gopher-font-weight);
+  font-style: var(--gopher-font-style);
+  font-variant: var(--gopher-font-variant);
+  font-kerning: var(--gopher-font-kerning);
+  font-optical-sizing: var(--gopher-font-optical-sizing);
+  font-stretch: var(--gopher-font-stretch);
+  font-variation-settings: var(--gopher-font-variation-settings);
+  font-feature-settings: var(--gopher-font-feature-settings);
+  text-transform: var(--gopher-text-transform);
+  text-decoration: var(--gopher-text-decoration);
+  text-align: var(--gopher-text-align);
+  text-indent: var(--gopher-text-indent);
+}
+
+/* Main heading style - Hero/Display */
+.bloom-heading {
+  font-family: var(--font-display) !important;
+  font-size: 80.512px !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  font-kerning: auto !important;
+  font-optical-sizing: auto !important;
+  font-stretch: 100% !important;
+  font-variation-settings: normal !important;
+  font-feature-settings: normal !important;
+  text-transform: none !important;
+  text-decoration: none !important;
+  text-align: center !important;
+  text-indent: 0px !important;
+  color: var(--primary-dark) !important;
+  background-color: transparent !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Site Title heading style - Section Headings */
+.site-title {
+  font-family: var(--font-display) !important;
+  font-size: 34.432px !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  font-kerning: auto !important;
+  font-optical-sizing: auto !important;
+  font-stretch: 100% !important;
+  font-variation-settings: normal !important;
+  font-feature-settings: normal !important;
+  text-transform: none !important;
+  text-decoration: none !important;
+  text-align: start !important;
+  text-indent: 0px !important;
+  color: var(--primary-dark) !important;
+  background-color: transparent !important;
+  letter-spacing: -0.01em !important;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid var(--primary-dark);
+  color: var(--primary-dark);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  color: var(--bg-light);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-warm);
+  border: 1px solid var(--secondary-warm);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-muted);
+  border-color: var(--secondary-muted);
+}
+
+/* Subtle Entrance Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.8s ease-out forwards;
+}
+
+.animation-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animation-delay-500 {
+  animation-delay: 0.5s;
 }
