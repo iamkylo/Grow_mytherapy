@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function SocialFeed() {
     const socialImages = [
-        { src: "/assets/social-1.jpg", alt: "Social post 1" },
-        { src: "/assets/social-2.jpg", alt: "Social post 2" },
-        { src: "/assets/social-3.jpg", alt: "Social post 3" },
-        { src: "/assets/social-4.jpg", alt: "Social post 4" },
+        { src: "/", alt: "Social post 1" },
+        { src: "/", alt: "Social post 2" },
+        { src: "/", alt: "Social post 3" },
+        { src: "/", alt: "Social post 4" },
     ];
 
     return (
