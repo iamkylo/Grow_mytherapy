@@ -2,7 +2,7 @@ import ScrollAnimate from "./ScrollAnimate";
 
 export default function GetStarted() {
     return (
-        <section className="w-full bg-[#7D8B7A] pt-8 md:pt-12 lg:pt-16 pb-20 md:pb-28 lg:pb-36 px-6 md:px-12 lg:px-20">
+        <section className="w-full bg-[#7D8B7A] pt-0 pb-20 md:pb-28 lg:pb-36 px-6 md:px-12 lg:px-20">
             <ScrollAnimate animation="fade-up" className="max-w-[700px] mx-auto text-center">
                 {/* Heading */}
                 <h2

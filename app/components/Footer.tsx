@@ -12,7 +12,7 @@ export default function Footer() {
                     {/* Brand & Contact - Centered on mobile */}
                     <div className="flex flex-col items-center md:items-start text-center md:text-left">
                         <h3
-                            className="text-[#1F2A33] mb-3 sm:mb-4"
+                            className="text-[#2C3E50] mb-3 sm:mb-4"
                             style={{
                                 fontFamily: "'Playfair Display', 'Cormorant Garamond', Georgia, serif",
                                 fontWeight: 500,
@@ -24,7 +24,7 @@ export default function Footer() {
                             Dr. Maya Reynolds, PsyD
                         </h3>
                         <p
-                            className="text-[#1F2A33] mb-2"
+                            className="text-[#2C3E50] mb-2"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontWeight: 400,
@@ -35,7 +35,7 @@ export default function Footer() {
                             123th Street 45 W
                         </p>
                         <p
-                            className="text-[#1F2A33] mb-4"
+                            className="text-[#2C3E50] mb-4"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontWeight: 400,
@@ -47,7 +47,7 @@ export default function Footer() {
                         </p>
                         <a
                             href="mailto:email@example.com"
-                            className="text-[#1F2A33] underline mb-1"
+                            className="text-[#2C3E50] underline mb-1"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontWeight: 400,
@@ -58,7 +58,7 @@ export default function Footer() {
                         </a>
                         <a
                             href="tel:5555555555"
-                            className="text-[#1F2A33] underline"
+                            className="text-[#2C3E50] underline"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontWeight: 400,
@@ -72,7 +72,7 @@ export default function Footer() {
                     {/* Hours - Centered on mobile */}
                     <div className="flex flex-col items-center md:items-start text-center md:text-left md:pl-12 lg:pl-24">
                         <h3
-                            className="text-[#1F2A33] mb-3 sm:mb-4"
+                            className="text-[#2C3E50] mb-3 sm:mb-4"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontWeight: 500,
@@ -83,7 +83,7 @@ export default function Footer() {
                             Hours
                         </h3>
                         <p
-                            className="text-[#1F2A33]"
+                            className="text-[#2C3E50]"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontWeight: 400,
@@ -94,7 +94,7 @@ export default function Footer() {
                             Monday – Friday
                         </p>
                         <p
-                            className="text-[#1F2A33]"
+                            className="text-[#2C3E50]"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontWeight: 400,
@@ -109,7 +109,7 @@ export default function Footer() {
                     {/* Navigation - Centered on mobile */}
                     <div className="flex flex-col items-center md:items-end text-center md:text-right">
                         <h3
-                            className="text-[#1F2A33] mb-3 sm:mb-4"
+                            className="text-[#2C3E50] mb-3 sm:mb-4"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontWeight: 500,
@@ -121,7 +121,7 @@ export default function Footer() {
                         </h3>
                         <Link
                             href="/"
-                            className="text-[#1F2A33] underline mb-1 hover:opacity-70 transition-opacity"
+                            className="text-[#2C3E50] underline mb-1 hover:opacity-70 transition-opacity"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontSize: 'clamp(14px, calc((1.2 - 1) * 1.2vw + 1rem), 18px)',
@@ -131,7 +131,7 @@ export default function Footer() {
                         </Link>
                         <Link
                             href="/contact"
-                            className="text-[#1F2A33] underline mb-1 hover:opacity-70 transition-opacity"
+                            className="text-[#2C3E50] underline mb-1 hover:opacity-70 transition-opacity"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontSize: 'clamp(14px, calc((1.2 - 1) * 1.2vw + 1rem), 18px)',
@@ -141,7 +141,7 @@ export default function Footer() {
                         </Link>
                         <Link
                             href="/blog"
-                            className="text-[#1F2A33] underline hover:opacity-70 transition-opacity"
+                            className="text-[#2C3E50] underline hover:opacity-70 transition-opacity"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontSize: 'clamp(14px, calc((1.2 - 1) * 1.2vw + 1rem), 18px)',
@@ -160,7 +160,7 @@ export default function Footer() {
                     <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-6">
                         <Link
                             href="/privacy"
-                            className="text-[#1F2A33] underline hover:opacity-70 transition-opacity"
+                            className="text-[#2C3E50] underline hover:opacity-70 transition-opacity"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontSize: 'clamp(12px, 14px, 16px)',
@@ -170,7 +170,7 @@ export default function Footer() {
                         </Link>
                         <Link
                             href="/good-faith-estimate"
-                            className="text-[#1F2A33] underline hover:opacity-70 transition-opacity"
+                            className="text-[#2C3E50] underline hover:opacity-70 transition-opacity"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontSize: 'clamp(12px, 14px, 16px)',
@@ -180,7 +180,7 @@ export default function Footer() {
                         </Link>
                         <Link
                             href="/terms-conditions"
-                            className="text-[#1F2A33] underline hover:opacity-70 transition-opacity"
+                            className="text-[#2C3E50] underline hover:opacity-70 transition-opacity"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontSize: 'clamp(12px, 14px, 16px)',
@@ -190,7 +190,7 @@ export default function Footer() {
                         </Link>
                         <Link
                             href="/disclaimer"
-                            className="text-[#1F2A33] underline hover:opacity-70 transition-opacity"
+                            className="text-[#2C3E50] underline hover:opacity-70 transition-opacity"
                             style={{
                                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                                 fontSize: 'clamp(12px, 14px, 16px)',
@@ -202,7 +202,7 @@ export default function Footer() {
 
                     {/* Credits */}
                     <p
-                        className="text-[#1F2A33] text-center"
+                        className="text-[#2C3E50] text-center"
                         style={{
                             fontFamily: "'Cormorant Garamond', Georgia, serif",
                             fontSize: 'clamp(12px, 14px, 16px)',
@@ -221,7 +221,7 @@ export default function Footer() {
 
                     {/* Copyright */}
                     <p
-                        className="text-[#1F2A33] text-center"
+                        className="text-[#2C3E50] text-center"
                         style={{
                             fontFamily: "'Cormorant Garamond', Georgia, serif",
                             fontSize: 'clamp(12px, 14px, 16px)',

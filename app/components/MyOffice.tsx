@@ -9,12 +9,13 @@ export default function MyOffice() {
                     className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-white"
                     style={{
                         fontFamily: "'Cormorant Garamond', Georgia, serif",
-                        fontWeight: 500,
+                        fontWeight: 600,
                         fontStyle: 'normal',
-                        lineHeight: 'calc(1.2 * (1 + (1 - 2.5) / 25))',
-                        fontSize: 'calc((2.5 - 1) * 1.2vw + 1rem)',
+                        lineHeight: 'calc(1.2 * (1 + (1 - 3.0) / 25))',
+                        fontSize: 'calc((3.0 - 1) * 1.2vw + 1rem)',
                         letterSpacing: '0em',
                         textTransform: 'none',
+                        textShadow: '2px 4px 8px rgba(0, 0, 0, 0.3)',
                     }}
                 >
                     Our Office

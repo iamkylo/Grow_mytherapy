@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function SocialFeed() {
     const socialImages = [
-        { src: "/", alt: "Social post 1" },
-        { src: "/", alt: "Social post 2" },
-        { src: "/", alt: "Social post 3" },
-        { src: "/", alt: "Social post 4" },
+        { src: "/social-1.png", alt: "Take a deep breath - Therapy wellness post" },
+        { src: "/social-2.png", alt: "Healing takes time - Mental health self-care" },
+        { src: "/social-3.png", alt: "You are not alone - Support message" },
+        { src: "/social-4.png", alt: "Begin your journey - Therapy invitation" },
     ];
 
     return (
