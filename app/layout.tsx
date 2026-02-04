@@ -16,7 +16,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Lilac Template",
+  title: "Reclaim Therapy Studio",
   description: "Therapy for Adults in Minneapolis, MN",
 };
 
